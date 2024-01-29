@@ -1,9 +1,11 @@
 menu = require("menu")
 current_state = nil
 maininterface = {
-    switchState = switchState
+    switchState = switchState,
+    EvilFont = nil
 }
 function love.load()
+    maininterface.EvilFont = love.graphics.newFont("EvilAssets/PAPYRUS.TTF")
     switchState(menu)
 end
 function love.draw()

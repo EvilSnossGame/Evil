@@ -13,8 +13,7 @@ function menu.init(maininterface)
             print("Quartah Poundah")
         end
     }
-    menu.EvilFont = love.graphics.newFont("EvilAssets/PAPYRUS.TTF")
-    menu.EvilText = love.graphics.newText(menu.EvilFont, menu.Button.text)
+    menu.EvilText = love.graphics.newText(maininterface.EvilFont, menu.Button.text)
 end
 function menu.draw()
     width, height = love.graphics.getDimensions()
