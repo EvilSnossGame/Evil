@@ -24,7 +24,7 @@ end
 function game.update(game)
     if game.StartTime+3<love.timer.getTime() then
         if game.currentgame.objective then
-            game:switchGame(require("Minigames/PressButton"))
+            game:switchGame(require("Minigames/SuperPressButton"))
         else
             game.maininterface.switchState(require("menu"))
         end

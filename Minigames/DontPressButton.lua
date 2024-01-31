@@ -2,12 +2,12 @@ game = {}
 
 function game.init(game,gameinterface)
     game.gameinterface = gameinterface
-    game.objective = false
-    game.PressText = love.graphics.newText(gameinterface.EvilFont,"Hamborgoise")
+    game.objective = true
+    game.PressText = love.graphics.newText(gameinterface.EvilFont,"Evil Hamborgoise")
 end
 
 function game.mousepressed(game,x,y,button,istouch,presses)
-    game.objective = true
+    game.objective = false
 end
 
 function game.draw(game)

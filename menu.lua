@@ -12,7 +12,7 @@ function menu.init(menu,maininterface)
         text = "Evil",
         onPress = function()
             menu.maininterface.switchState(game)
-            game:switchGame(require("Minigames/PressButton"))
+            game:switchGame(require("Minigames/SuperPressButton"))
         end
     }
     menu.EvilText = love.graphics.newText(maininterface.EvilFont, menu.Button.text)
